@@ -19,6 +19,17 @@
     CCYPhotoBrowserPhotos *_photos;
 }
 
++ (instancetype)animatorWithPhotos:(CCYPhotoBrowserPhotos *)photos {
+    return [[self alloc] initWithPhotos:photos];
+}
+
+- (instancetype)initWithPhotos:(CCYPhotoBrowserPhotos *)photos {
+    if (self = [super init]) {
+        _photos = photos;
+    }
+    return self;
+}
+
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     
     _isPresting = YES;

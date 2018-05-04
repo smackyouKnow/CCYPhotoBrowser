@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class CCYPhotoBrowserPhotos;
 
 @interface CCYPhotoBrowserAnimator : NSObject<UIViewControllerTransitioningDelegate>
+
++ (instancetype)animatorWithPhotos:(CCYPhotoBrowserPhotos *)photos;
 
 @property (nonatomic, strong)UIImageView *fromView;
 

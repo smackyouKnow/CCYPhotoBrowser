@@ -10,4 +10,6 @@
 
 @interface CCYPhotoViewController : UIViewController
 
++ (instancetype)viewerWithUrlString:(NSString *)urlString photoIndex:(NSInteger)photoIndex placeholder:(UIImage *)placeholder;
+
 @end
