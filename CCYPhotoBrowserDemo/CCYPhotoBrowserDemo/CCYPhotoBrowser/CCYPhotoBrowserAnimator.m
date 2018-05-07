@@ -79,6 +79,28 @@
 }
 
 - (void)dismissTransition:(nonnull id<UIViewControllerContextTransitioning>)dismissTransition {
+    UIView *containerView = [dismissTransition containerView];
+    UIView *fromView = [dismissTransition viewForKey:UITransitionContextFromViewKey];
+    
+    //获取移动的图片
+    UIImageView *animView = [self animationImageView];
+    animView.frame = [containerView convertRect:_fromView.frame fromView:_fromView.superview];
+    animView.alpha = fromView.alpha;
+    [containerView addSubview:animView];
+    
+    [fromView removeFromSuperview];
+    
+    //获取目的地的图片
+    UIImageView *parentView = [self parentImageView];
+    CGRect targetRect = [containerView convertRect:parentView.frame fromView:parentView.superview];
+    
+    [UIView animateWithDuration:[self transitionDuration:dismissTransition] animations:^{
+        animView.frame = targetRect;
+        animView.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [animView removeFromSuperview];
+        [dismissTransition completeTransition:YES];
+    }];
     
 }
 

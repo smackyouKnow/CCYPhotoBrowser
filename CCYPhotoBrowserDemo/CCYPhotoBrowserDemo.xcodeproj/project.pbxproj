@@ -47,6 +47,7 @@
 		90AFD056209C46F300375840 /* CCYPhotoBrowserPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AFD055209C46F300375840 /* CCYPhotoBrowserPhotos.m */; };
 		90AFD059209C479500375840 /* CCYPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AFD058209C479500375840 /* CCYPhotoProgressView.m */; };
 		90AFD05C209C4C9000375840 /* CCYPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AFD05B209C4C9000375840 /* CCYPhotoBrowserAnimator.m */; };
+		90AFD05F209C604E00375840 /* CCYPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AFD05E209C604E00375840 /* CCYPhotoBrowserController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		90AFD058209C479500375840 /* CCYPhotoProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCYPhotoProgressView.m; sourceTree = "<group>"; };
 		90AFD05A209C4C9000375840 /* CCYPhotoBrowserAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCYPhotoBrowserAnimator.h; sourceTree = "<group>"; };
 		90AFD05B209C4C9000375840 /* CCYPhotoBrowserAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCYPhotoBrowserAnimator.m; sourceTree = "<group>"; };
+		90AFD05D209C604E00375840 /* CCYPhotoBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCYPhotoBrowserController.h; sourceTree = "<group>"; };
+		90AFD05E209C604E00375840 /* CCYPhotoBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCYPhotoBrowserController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,8 @@
 				90AFD058209C479500375840 /* CCYPhotoProgressView.m */,
 				90AFD05A209C4C9000375840 /* CCYPhotoBrowserAnimator.h */,
 				90AFD05B209C4C9000375840 /* CCYPhotoBrowserAnimator.m */,
+				90AFD05D209C604E00375840 /* CCYPhotoBrowserController.h */,
+				90AFD05E209C604E00375840 /* CCYPhotoBrowserController.m */,
 			);
 			path = CCYPhotoBrowser;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				90AFD03E209C46A500375840 /* YYImageCache.m in Sources */,
 				90AFD05C209C4C9000375840 /* CCYPhotoBrowserAnimator.m in Sources */,
 				90AFCFC0209C462E00375840 /* AppDelegate.m in Sources */,
+				90AFD05F209C604E00375840 /* CCYPhotoBrowserController.m in Sources */,
 				90AFD048209C46A500375840 /* YYCache.m in Sources */,
 				90AFD03F209C46A500375840 /* YYWebImageManager.m in Sources */,
 				90AFD045209C46A500375840 /* CALayer+YYWebImage.m in Sources */,

@@ -22,8 +22,7 @@
 @property (nonatomic, strong)YYAnimatedImageView *imageView;
 /** 图片url */
 @property (nonatomic, strong)NSURL *url;
-/** 选择的角标 */
-@property (nonatomic, assign)NSInteger photoIndex;
+
 
 
 @end
@@ -50,6 +49,12 @@
     
     [self setupUI];
     [self loadImage];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    self.scrollView.zoomScale = 1;
 }
 
 - (void)setupUI {
@@ -95,6 +100,7 @@
     if (imageSize.height < screenSize.height) {
         CGFloat offSetY = (screenSize.height - imageSize.height) / 2.0;
         _scrollView.contentInset = UIEdgeInsetsMake(offSetY, 0, offSetY, 0);
+//        _imageView.frame = CGRectMake(0, offSetY, imageSize.width, imageSize.height);
     }
 }
 
