@@ -60,6 +60,11 @@
 - (void)setupUI {
     self.scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:self.scrollView];
+    if (@available(iOS 11.0, *)) {
+        self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     
     _imageView = [[YYAnimatedImageView alloc]initWithImage:_placeholder];
     _imageView.center = self.view.center;
